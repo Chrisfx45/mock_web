@@ -35,7 +35,7 @@ export default function Services() {
  
       </Center>
       <hr></hr>
-      <button onClick={()=>  console.log( desc, url1, url2,url3)}>click me</button>
+
       <Center>
       <div className="grid grid-cols-1 gap-3 w-4/5 font-serif"style={{fontSize:"3vw", marginTop:"5%"}}>
 
