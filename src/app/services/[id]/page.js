@@ -6,8 +6,8 @@ import Image from "next/image";
 
 // static metadata
 // export const metadata = {
-//   title: "Yudhistira Media - Blog List ",
-//   description: "Yudhistira Media channel",
+//   title: "Services - List ",
+//   description: " List of services and price",
 // };
 
 export const revalidate= 1;
@@ -32,7 +32,7 @@ export default async function Page({ params }) {
                 </div>
                 {content.fields.kinds?.map((index,item)=>{
                     return(
-                    <div className=" col-span-1"style={{fontSize:"3vw"}}>
+                    <div key={index} className=" col-span-1"style={{fontSize:"3vw"}}>
                         <Box bg={"black"} borderColor={"white"} borderX={"1px"} marginTop={"10%"}>
                             <Center w={"100%"}>{content.fields.kinds[item]}</Center>
                             <Center w={"100%"}>{content.fields.price[item]}</Center>

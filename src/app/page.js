@@ -29,7 +29,7 @@ export default function HomePage() {
 
     <>
     <Template>
-    <button onClick={console.log(data)}> click me</button>
+
     
       <Center display={"flex"} minHeight="500"mx={"auto"} my={"10%"}w={"80%"} className="bg-gradient-to-r from-orange-900 via-yellow-700 to-orange-900">
         <Box backgroundColor={"#000000"} w={"98%"} minHeight={"490"} m={"1%"}>
