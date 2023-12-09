@@ -26,12 +26,13 @@ export default function About(){
       return <div> Loading from SWR ... </div>;
     }
     const content = data.about.items[0].fields
+
     const kafe ="https:" + data.about.includes.Asset[0].fields.file.url
     const icon ="https:" + data.about.includes.Asset[1].fields.file.url
 
     return (
     <Template>
-        <button onClick={console.log(data)}> click me</button>
+
         <Center w={"100%"} h={"100%"}className="text-black">
             <Center  width={"90%"} h={"90%"} m={"5%"} minHeight={"600"}backgroundColor={"#390e00"}>
                 <Box  width={"98%"} h={"98%"} minHeight={"588"} backgroundColor={"#FCE09B"}    rounded={"5%"}>

@@ -7,7 +7,7 @@ export const preferredRegion = 'auto'
 export const maxDuration = 5
 
 export async function GET() {
-  const res = await fetch(`https://randomuser.me/api/`, {
+  const res = await fetch(`https://randomuser.me/api/?results=5`, {
     headers: {
       "Content-Type": "application/json",
     },
